@@ -6,11 +6,13 @@ import ErrorPage from './pages/Error';
 import ProductDetailPage from "./pages/ProductDetail";
 
 
+
+
 function App(){
-  return(
+  return(    
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<RootLayout />}  >
+        <Route path="/"      element={<RootLayout />}  >
             <Route path="/" element={<HomePage />}  />
             <Route path="/products" element={<ProductsPage />}  />
             <Route path="/products/:productId" element={<ProductDetailPage />}  />
